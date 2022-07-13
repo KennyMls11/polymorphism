@@ -1,13 +1,27 @@
+import ar.com.ada.online.second.interfaces.Comunicacion;
 import ar.com.ada.online.second.interfaces.LivingBeing;
-import ar.com.ada.online.second.subclass.Animal;
-import ar.com.ada.online.second.subclass.Persona;
+import ar.com.ada.online.second.subclass.*;
 
 ;import java.util.ArrayList;
 import java.util.List;
 
 public class App {
     public static void main(String[] args) {
-        List<LivingBeing> livingBeings= new ArrayList<>();
+
+        List<Comunicacion> mediosDeExpresion = new ArrayList<>();
+
+        mediosDeExpresion.add(new Lienzo(" Lino ", 25));
+        mediosDeExpresion.add(new Mural(true, false));
+        mediosDeExpresion.add(new Hoja("A4", true));
+        mediosDeExpresion.add(new TabletaDigital("Ipad", 2021));
+
+        for (int i = 0; i < mediosDeExpresion.size(); i++) {
+            mediosDeExpresion.get(i).comunicarse();
+            mediosDeExpresion.get(i).expresarse();
+        }
+    }
+}
+       /*List<LivingBeing> livingBeings= new ArrayList<>();
         livingBeings.add(new Persona());
         livingBeings.add(new Animal());
 
