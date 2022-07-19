@@ -2,11 +2,36 @@ import ar.com.ada.online.second.interfaces.Comunicacion;
 import ar.com.ada.online.second.interfaces.LivingBeing;
 import ar.com.ada.online.second.subclass.*;
 
-;import java.util.ArrayList;
-import java.util.List;
+;import java.util.*;
 
 public class App {
     public static void main(String[] args) {
+
+    }
+}
+
+        /*<String> strings = new LinkedList<>();
+        strings.add("Elemento 1 ");
+        strings.add(null);
+        strings.add("Elemento 2 ");
+        strings.add("Elemento 1 ");
+        System.out.println("Tamaño: "+ strings.size());
+        System.out.println(strings);
+        strings.remove(null);
+        System.out.println(strings);
+        System.out.println("Tamaño: "+ strings.size());
+
+    }
+}
+        //alemacenar una coleccion de elementos de tipo string, clase String//
+        /*Set<String> strings= new HashSet<>();
+        strings.add("elemento 1");
+
+        strings.remove("elemento 1");
+
+    }
+    }
+        /*
 
         List<Comunicacion> mediosDeExpresion = new ArrayList<>();
 
